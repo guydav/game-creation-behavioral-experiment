@@ -29,10 +29,10 @@ const DEBUG = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ||
 // const FORCE_UNITY_PROD = true;
 // const USE_UNITY_PROD = !DEBUG || FORCE_UNITY_PROD;
 const DEBUG_FIRESTORE = false;
-const PROLIFIC_REDIRECT_URL = 'https://app.prolific.co/submissions/complete?cc=33345169';  
+const PROLIFIC_REDIRECT_URL = 'https://app.prolific.co/submissions/complete?cc=<OUR_PROLIFIC_CODE>';  
 const FIRESTORE_MAX_BATCH_SIZE = 500;
 const MAX_REPLAY_BATCH_SIZE = 512 * 1024; // 256kb, quarter the Firestore maximum size of 1 MB
-const FIRESTORE_COLLECTION_NAME = `participants-v2${DEBUG ? '-develop' : ''}`;
+const FIRESTORE_COLLECTION_NAME = '<OUR_FIRESTORE_COLLECTION_NAME>';
 
 
 Sentry.init({
