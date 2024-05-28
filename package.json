@@ -1,0 +1,67 @@
+{
+  "name": "game-generation-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@ramonak/react-progress-bar": "^3.2.1",
+    "@sentry/integrations": "^6.13.3",
+    "@sentry/react": "^6.13.3",
+    "@sentry/tracing": "^6.14.0",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "env-cmd": "^10.1.0",
+    "firebase": "^9.0.0-beta.7",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.17.2",
+    "firebase-tools": "^9.16.0",
+    "firestore-export-import": "^1.2.1",
+    "firestore-size": "^2.0.7",
+    "react": "^17.0.2",
+    "react-device-detect": "^2.0.1",
+    "react-dom": "^17.0.2",
+    "react-quiz-component": "^0.5.0",
+    "react-scripts": "4.0.3",
+    "react-unity-webgl": "^8.8.0",
+    "seedrandom": "^3.0.5",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@sayari/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@sayari/eslint-plugin": "^0.0.1-rc.2",
+    "autoprefixer": "^9.8.6",
+    "eslint-plugin-react": "^7.26.1",
+    "postcss": "^7.0.36",
+    "prop-types": "^15.7.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+  }
+}

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer utilities {
+  .section-title {
+    @apply block text-white bg-purple-700 text-base text-center font-bold;
+  }
+
+  .btn {
+    @apply w-auto inline-block justify-self-center font-bold py-2 px-4 rounded text-base;
+  }
+  .btn-xs {
+    @apply w-auto inline-block justify-self-center font-bold py-1 px-2 rounded text-xs;
+  }
+  .btn:disabled {
+    @apply opacity-50
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+  .btn-gray {
+    @apply bg-gray-400 text-white;
+  }
+  .btn-gray:hover {
+    @apply bg-gray-500;
+  }
+  .btn-gray:disabled:hover {
+    @apply bg-gray-400;
+  }
+  .btn-green {
+    @apply bg-green-500 text-white;
+  }
+  .btn-green:hover {
+    @apply bg-green-700;
+  }
+  a {
+    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+ }
+}
